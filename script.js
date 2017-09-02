@@ -5,3 +5,9 @@ test.addEventListener('click', () =>
 	{ console.log(input.value) 
 }
 );
+
+var lol = 'kek';
+
+function cheburek() {
+	console.log(lol);
+}
