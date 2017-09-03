@@ -9,8 +9,14 @@
 var searchButton = document.querySelector('#search_button');
 var searchField = document.querySelector('#search_field');
 
-searchButton.addEventListener('click', getGithubData);
-
 function getGithubData() {
-    console.log(searchField.value);
+    fetch('https://api.github.com/users/octocat/repos')
+        .then(function(response) {
+            return response.json()
+        })
+        .then(function(data) {
+        console.log(data);
+    })
 }
+
+searchButton.addEventListener('click', getGithubData);
