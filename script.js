@@ -1,13 +1,16 @@
-var test = document.getElementById('test');
-var input = document.getElementById('input_id');
+// var searchButton = document.querySelector('#search_button');
+// var searchField = document.querySelector('#search_field');
+//
+// searchButton.addEventListener('click', function ()
+// 	{ console.log(searchField.value)
+// 	}
+// );
 
-test.addEventListener('click', () => 
-	{ console.log(input.value) 
-}
-);
+var searchButton = document.querySelector('#search_button');
+var searchField = document.querySelector('#search_field');
 
-var lol = 'kek';
+searchButton.addEventListener('click', getGithubData);
 
-function cheburek() {
-	console.log(lol);
+function getGithubData() {
+    console.log(searchField.value);
 }
