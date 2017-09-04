@@ -8,9 +8,7 @@ function getGithubData() {
         })
         .then(function(data) {
         console.log(data);
-
-        var numberOne = data[0];
-        console.log(numberOne);
+        console.log(data[0].name);
     })
 }
 
@@ -26,3 +24,7 @@ var person = {
 var arr1 = [1, 2, 3];
 var numberTwo = arr1[1];
 console.log(numberTwo); //3
+
+// inputArray.map(function(item) {
+//     return { someKey: item.someKey, ... };
+// });
