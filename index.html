@@ -5,19 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>mini GitHub API client</title>
     <link rel="stylesheet" href="style.css">
- </head>
+</head>
 
 <body>
 <div class="wrapper">
-    <form action="get">
-        <label for="search_field">
-            <input type="text" id="search_field" name="text" size="30">
-        </label>
-        <button type="button" id="search_button" class="button">Submit</button>
-    </form>
-
+    <header>
+        <h2>mini <span>GitHub API </span>client</h2>
+        <div class="form">
+            <form action="get">
+                <label for="search_field">
+                    <input type="text" id="search_field" name="text" size="30">
+                </label>
+                <button type="button" id="search_button" class="button">Submit</button>
+            </form>
+        </div>
+    </header>
 </div>
 <script src="script.js"></script>
 </body>
