@@ -8,23 +8,12 @@ function getGithubData() {
         })
         .then(function(data) {
         console.log(data);
-        console.log(data[0].name);
-    })
+        // console.log(data[0].full_name);
+
+            for(var i=0;i<data.length;i++){
+                console.log(data[i].name + " " + data[i].stargazers_count);
+            }
+        })
 }
 
 searchButton.addEventListener('click', getGithubData);
-
-var person = {
-    name: ['Bob', 'Smith'],
-    age: 32,
-    gender: 'male',
-    interests: ['music', 'skiing'],
-};
-
-var arr1 = [1, 2, 3];
-var numberTwo = arr1[1];
-console.log(numberTwo); //3
-
-// inputArray.map(function(item) {
-//     return { someKey: item.someKey, ... };
-// });
