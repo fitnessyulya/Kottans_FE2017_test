@@ -17,3 +17,4 @@ function getGithubData() {
 }
 
 searchButton.addEventListener('click', getGithubData);
+
